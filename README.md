@@ -27,13 +27,16 @@ sequences = df["Séquence"]
 print(sequences)
 print("\n")
 
-# *** Affichage avec une bibliothèque de visualisation (matplotlib) ***
-import matplotlib.pyplot as plt
 
-# Affichage du tableau de données sous forme de graphique
-plt.figure(figsize=(10, 4))
-plt.plot(df["Séquence"], df["Pourcentage GC"], marker="o")
-plt.xlabel("Séquence")
-plt.ylabel("Pourcentage GC")
-plt.title("Pourcentage de GC par séquence")
-plt.show()
+#2) Sélectionner et afficher uniquement la colonne "Longueur"
+print("************* Affichage de la colonne Longueur ***************\n")
+
+col_longueur = df["Longueur"]
+print(col_longueur)
+
+#3)Filtrer les séquences avec la Longueur est supérieurr à 10%
+print("************* Filtrage avec pourcentage % *************")
+# Filtrer les séquences avec la Longueur est supérieur à 10
+filtered_df = df[df["Longueur"] > 10]
+print(filtered_df)
+
