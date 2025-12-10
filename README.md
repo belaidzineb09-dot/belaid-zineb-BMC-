@@ -2,7 +2,7 @@
 # AYACHI RANA
 # BEZZAOUYA INES FATINE
 # benhammo ibtihel
-# hadjedi rania
+# Hadjiedj  rania
 import pandas as pd
 
 # Données : Séquences ADN, Longueur, Pourcentage de GC
