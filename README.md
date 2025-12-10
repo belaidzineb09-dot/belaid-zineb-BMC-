@@ -1,4 +1,4 @@
-# BELAID-ZINEB-BMC-
+# Chef du projet : BELAID ZINEB (BMC) | Lien GitHub : https://github.com/belaidzineb09-dot/belaid-zineb-BMC-
 # AYACHI RANA
 # BEZZAOUYA INES FATINE
 # benhammo ibtihel
