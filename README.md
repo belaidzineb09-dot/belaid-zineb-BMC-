@@ -65,3 +65,5 @@ print("Écart-type Longueur :", ecart_longueur)
 
 #8)Télécharger un fichier CVS et le mettre dans un DataFrame
 #charger un fichier CSV dans un DataFrame
+#df_loaded = pd.read_csv("tableau_sequences.csv")
+#print(
