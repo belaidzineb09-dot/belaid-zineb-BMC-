@@ -65,5 +65,5 @@ print("Écart-type Longueur :", ecart_longueur)
 
 # 8) sauvegarder un fichier CSV et le mettre dans un DataFrame
 #sauvegarder un fichier CSV dans un DataFrame
-#df_sauvegarder = pd.read_csv("tableau_sequences.csv")
-#print(df_sauvegarder)
+df.to_csv("tableau_sequences.csv", index=False)
+print("Fichier CSV sauvegardé avec succès !")
