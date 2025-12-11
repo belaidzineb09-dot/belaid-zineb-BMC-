@@ -49,7 +49,7 @@ print("************* Filtrage : longueur supérieure à 10************")
 filtered_df = df[df["Longueur"] > 10]
 print(filtered_df)
 
-# 4)Calculer la moyenne du pourcentage de GC après la virgule 
+# 4)Calculer la moyenne du pourcentage de GC avec 3 chiffre après la virgule 
 print("************* Calcul de la moyenne *************")
 # Calculer la moyenne du pourcentage de GC avec 3 chiffre aprè la virgule 
 average_gc = df["Pourcentage GC"].mean()
