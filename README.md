@@ -43,7 +43,7 @@ print(longueur)
 #plt.title("Pourcentage de GC par séquence")
 #plt.show()
 
-# 3)Filtrer les séquences avec la Longueur est supérieurr à 10%
+# 3)Filtrer les séquences avec la Longueur > 10
 print("************* Filtrage : longueur supérieure à 10************")
 # Filtrer les séquences avec la Longueur est supérieur à 10
 filtered_df = df[df["Longueur"] > 10]
