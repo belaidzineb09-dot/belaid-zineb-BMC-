@@ -63,7 +63,7 @@ ecart_longueur = df["Longueur"].std()
 print("\nÉcart-type %GC :", ecart_gc)
 print("Écart-type Longueur :", ecart_longueur)
 
-#8)Télécharger un fichier CVS et le mettre dans un DataFrame
+# 8)Télécharger un fichier CVS et le mettre dans un DataFrame
 #charger un fichier CSV dans un DataFrame
 #df_loaded = pd.read_csv("tableau_sequences.csv")
 #print(df_loaded)
