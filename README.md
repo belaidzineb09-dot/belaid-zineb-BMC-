@@ -58,7 +58,7 @@ df["Nb_G"] = df["Séquence"].apply(lambda seq: seq.count("G"))
 print(df)
 
 # 7) Calculer l’écart-type du %GC et de la longueur
-ecart_gc = df["Pourcentage_GC"].std()
+ecart_gc = df["Pourcentage GC"].std()
 ecart_longueur = df["Longueur"].std()
 print("\nÉcart-type %GC :", ecart_gc)
 print("Écart-type Longueur :", ecart_longueur)
