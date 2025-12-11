@@ -5,7 +5,7 @@
 # Hadjiedj  rania
 import pandas as pd
 
-# Données : Séquences ADN, Longueur, Pourcentage de GC
+# 1) Données : Séquences ADN, Longueur, Pourcentage de GC
 data = {
     "Séquence": ["ATGCGTACGTA", "GCTAGCTAGGCC", "GCTAGCTAGGCC", "TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"],
     "Longueur": [12, 12, 12, 10,11,10,10],
@@ -14,28 +14,37 @@ data = {
 # Création du DataFrame (tableau pandas)
 df = pd.DataFrame(data)
 
-# *** Première partie : Création et affichage ***
-print("Analyse des séquences ADN")
+# Affichage du tableau
+print("Tableau Longueur :")
 print(df)
-print("\n")
 
-# *** Deuxième partie : Opérations ***
-print("******* Opérations *******")
+# Opérations sur les tableaux:
+print("************** Operations ***************")
 
-# 1) Sélectionner la colonne "Séquence"
-sequences = df["Séquence"]
-print(sequences)
-print("\n")
+# 2) Sélectionner la colonne "Longueur"
+longueur = df["Longueur"]
+print(longueur)
 
+# Affichage avec une bibliothèque de visualisation (matplotlib)
+#import matplotlib.pyplot as plt
+# Données
+#sequences = ["ATGCGTACGTA", "GCTAGCTAGGCC", "GCTAGCTAGGCC", "TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"]
+#longueur = [12, 12, 12, 10,11,10,10]
+#gc_content = [50, 66.67, 58.33, 40,45.45,60,50]
+# Création d'un DataFrame
+#data = {"Séquence": sequences, "Longueur": longueur, "Pourcentage GC": gc_content}
+#df = pd.DataFrame(data)
 
-# 2) Sélectionner et afficher uniquement la colonne "Longueur"
-print("************* Affichage de la colonne Longueur ***************\n")
-
-col_longueur = df["Longueur"]
-print(col_longueur)
+# Affichage du tableau de données sous forme de graphique
+#plt.figure(figsize=(10, 6))
+#plt.bar(df["Séquence"], df["Pourcentage GC"], color='skyblue')
+#plt.xlabel("Séquences")
+#plt.ylabel("Pourcentage GC")
+#plt.title("Pourcentage de GC par séquence")
+#plt.show()
 
 # 3)Filtrer les séquences avec la Longueur est supérieurr à 10%
-print("************* Filtrage avec pourcentage % *************")
+print("************* Filtrage : longueur supérieure à 10************")
 # Filtrer les séquences avec la Longueur est supérieur à 10
 filtered_df = df[df["Longueur"] > 10]
 print(filtered_df)
@@ -66,4 +75,4 @@ print("Écart-type Longueur :", ecart_longueur)
 # 8) Sauvegarder le tableau final dans un fichier CSV
 #Sauvegarder le tableau final dans un fichier CSV
 df.to_csv("tableau_sequences.csv", index=False)
-print("Fichier CSV sauvegardé avec succès !")
+print("Fichier CSV sauvegardé avec succès ")
