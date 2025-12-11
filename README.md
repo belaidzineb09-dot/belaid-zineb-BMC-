@@ -63,7 +63,7 @@ ecart_longueur = df["Longueur"].std()
 print("\nÉcart-type %GC :", ecart_gc)
 print("Écart-type Longueur :", ecart_longueur)
 
-# 8) sauvegarder un fichier CSV et le mettre dans un DataFrame
-#sauvegarder un fichier CSV dans un DataFrame
+# 8) Sauvegarder le tableau final dans un fichier CSV
+#Sauvegarder le tableau final dans un fichier CSV
 df.to_csv("tableau_sequences.csv", index=False)
 print("Fichier CSV sauvegardé avec succès !")
