@@ -26,7 +26,7 @@ longueur = df["Longueur"]
 print(longueur)
 
 # Affichage avec une bibliothèque de visualisation (matplotlib)
-#import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # Données
 #sequences = ["ATGCGTACGTA", "GCTAGCTAGGCC", "GCTAGCTAGGCC", "TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"]
 #longueur = [12, 12, 12, 10,11,10,10]
